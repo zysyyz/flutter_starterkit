@@ -1,4 +1,4 @@
-# flutter_starter_kit
+# flutter_starterkit
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=lijy91%40live.com&currency_code=USD&source=url)
 
@@ -22,7 +22,7 @@ Before starting make sure you have:
 Clone this repo via git:
 
 ```
-$ git clone --depth=1 https://github.com/blankapp/flutter_starter_kit.git <YOUR_PROJECT_NAME>
+$ git clone --depth=1 https://github.com/blankapp/flutter_starterkit.git <YOUR_PROJECT_NAME>
 ```
 
 ### Starting Development
@@ -39,9 +39,9 @@ $ git clone --depth=1 https://github.com/blankapp/flutter_starter_kit.git <YOUR_
 
 ## Discussion
 
-If you have any suggestions or questions about this project, you can discuss it by [Telegram Group](https://t.me/flutterdebugger) or my wechat.
+If you have any suggestions or questions about this project, you can discuss it by [Telegram Group](https://t.me/flutter_starterkit) or my wechat.
 
-![](http://blankapp.org/assets/images/wechat_qrcode.png)
+![](./screenshots/wechat_qrcode.png)
 
 ## License
 

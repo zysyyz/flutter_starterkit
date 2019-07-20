@@ -1,3 +1,5 @@
+import './jwt_token.dart';
+
 class User {
   final int id;
   String uniqueId;
@@ -12,7 +14,7 @@ class User {
   String company;
   String website;
   String bio;
-  String deletedAt;
+  JwtToken jwtToken;
   String createdAt;
   String updatedAt;
 
@@ -30,7 +32,7 @@ class User {
     this.company,
     this.website,
     this.bio,
-    this.deletedAt,
+    this.jwtToken,
     this.createdAt,
     this.updatedAt,
   });
@@ -50,7 +52,9 @@ class User {
       company: json['company'],
       website: json['website'],
       bio: json['bio'],
-      deletedAt: json['deleted_at'],
+      jwtToken: json['jwt_token'] != null
+          ? JwtToken.fromJson(json['jwt_token'])
+          : null,
       createdAt: json['created_at'],
       updatedAt: json['updated_at'],
     );
@@ -70,7 +74,7 @@ class User {
         'company': company,
         'website': website,
         'bio': bio,
-        'deleted_at': deletedAt,
+        'jwt_token': jwtToken != null ? jwtToken.toJson() : null,
         'created_at': createdAt,
         'updated_at': updatedAt,
       };

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../../exports.dart';
 
-
 class BootstrapScreen extends StatefulWidget {
   @override
   _BootstrapScreenState createState() => _BootstrapScreenState();

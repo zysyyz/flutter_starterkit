@@ -1,4 +1,4 @@
-# flutter_starter_kit
+# flutter_starterkit
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=lijy91%40live.com&currency_code=USD&source=url)
 
@@ -22,7 +22,7 @@
 Clone this repo via git:
 
 ```
-$ git clone --depth=1 https://github.com/blankapp/flutter_starter_kit.git <YOUR_PROJECT_NAME>
+$ git clone --depth=1 https://github.com/blankapp/flutter_starterkit.git <YOUR_PROJECT_NAME>
 ```
 
 ### 开始开发
@@ -39,9 +39,9 @@ $ git clone --depth=1 https://github.com/blankapp/flutter_starter_kit.git <YOUR_
 
 ## 探讨
 
-如果您对此项目有任何建议或疑问，可以通过 [Telegram Group](https://t.me/flutterdebugger) 或我的微信进行讨论。
+如果您对此项目有任何建议或疑问，可以通过 [Telegram Group](https://t.me/flutter_starterkit) 或我的微信进行讨论。
 
-![](http://blankapp.org/assets/images/wechat_qrcode.png)
+![](./screenshots/wechat_qrcode.png)
 
 ## 许可证
 

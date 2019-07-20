@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../exports.dart';
+import './tab_discovery.dart';
 import './tab_homepage.dart';
 import './tab_mine.dart';
 
@@ -47,7 +48,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   List<Widget> _scenes = [
     TabHomepageScene(),
-    TabMineScene(),
+    TabDiscoveryScene(),
     TabMineScene(),
   ];
   int _selectedIndex = 0;
@@ -61,7 +62,7 @@ class _HomeScreenState extends State<HomeScreen> {
           return MapEntry(
             index,
             Offstage(
-              offstage: isSelected,
+              offstage: !isSelected,
               child: TickerMode(
                 enabled: isSelected,
                 child: value,
@@ -73,7 +74,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  Widget _bottomNavigationBar(BuildContext context) {
+  Widget _buildBottomNavigationBar(BuildContext context) {
     final tabBarItems = [
       {
         'title': '首页',
@@ -81,8 +82,8 @@ class _HomeScreenState extends State<HomeScreen> {
         'badgeNumber': 0,
       },
       {
-        'title': '我的',
-        'icon': 'assets/images/ic_tab_mine.png',
+        'title': '发现',
+        'icon': 'assets/images/ic_tab_discovery.png',
         'badgeNumber': 0,
       },
       {
@@ -128,7 +129,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: _buildBody(context),
-      bottomNavigationBar: _bottomNavigationBar(context),
+      bottomNavigationBar: _buildBottomNavigationBar(context),
     );
   }
 }

@@ -1,4 +1,4 @@
-package org.blankapp.flutter_starter_kit;
+package org.blankapp.flutter_starterkit;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;
